@@ -315,5 +315,6 @@ function formatHREF(href)
       return href;
    }
 
-
-checkURL(formatHREF(process.argv[2]));
+for (i = 2; i < process.argv.length; i++) {
+    console.log(checkURL(formatHREF(process.argv[i])));
+}
